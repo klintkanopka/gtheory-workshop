@@ -1,8 +1,12 @@
+library(here)
 library(fs)
 
-dir_data <- here::here("data files")
-dir_output <- here::here("output")
+# looks for these directories within your working directory
+dir_data <- here("data files")
+dir_output <- here("output")
 
+
+# paths for the data files
 file_data_p1 <- path(dir_data, 
                      "data for mini-project 1", 
                      ext="xlsx")
