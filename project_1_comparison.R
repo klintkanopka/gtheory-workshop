@@ -28,7 +28,7 @@ d_reduc <- read_xlsx(file_data_p1) %>%
 
 study_design <- as.formula("Score ~ (1|Person) + (1|Rater)")
 
-G_study <- gstudy(data = d_shaped, 
+G_study <- gstudy(data = d_reduc, 
             formula = study_design)
 
 # Now let's run a pair of d studies comparing the use of two raters
